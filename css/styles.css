@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button,
+input {
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  background-color: #5c54ed;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  padding: 2rem;
+  color: #fdfdfd;
+}
+
+.form h1 {
+  margin-bottom: 1rem;
+}
+
+.form-input-container {
+  display: flex;
+  gap: 8px;
+}
+
+.form input {
+  padding: 0.8rem;
+  flex: 1;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form input::placeholder {
+  font-size: 1rem;
+}
+
+.form input::focus {
+  border: 3px solid #555;
+}
+
+.form button {
+  padding: 0.8rem;
+  min-width: 50px;
+  background-color: #8dd0f5;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#weather-data {
+  border-top: 1px solid #fff;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+#weather-data h2 {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+#weather-data h2 i {
+  font-size: 1rem;
+}
+
+#country {
+  height: 2.5rem;
+}
+
+#description {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#details-container #wind {
+  margin: 0.6rem;
+  padding-left: 1rem;
+  border-left: 1px solid #fff;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .form h1 {
+    font-size: 1rem;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  .form input::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .weather-data,
+  h2 {
+    font-size: 1rem;
+  }
+}
